@@ -1,0 +1,7 @@
+# 動作確認は Python 3.13 / numpy 2.5.3 / scipy 1.18.1 / Pillow 12.3.0。
+# tkinter は pip ではなく Python 本体に含まれる（詳しくは README を参照）。
+numpy>=1.26
+scipy>=1.11
+Pillow>=10.0
+# 圧縮 DICOM（JPEG 等）を読む場合のみ必要（任意）。非圧縮 DICOM は内蔵リーダで読める。
+# pydicom>=3.0
