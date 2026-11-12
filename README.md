@@ -21,9 +21,34 @@ DICOM は内蔵リーダ（`medviewer/dicomlite.py`）で読むため **pydicom 
 
 ```bash
 # リポジトリのフォルダへ移動してから
+
+# インストール済みPythonの確認（Windows）
+py -0p
+
+# 仮想環境の作成（いずれか1つを使用）
 python -m venv .venv
-# Windows:  .venv\Scripts\activate        macOS/Linux:  source .venv/bin/activate
-pip install -r requirements.txt
+python3 -m venv .venv
+py -m venv .venv
+py -3.12 -m venv .venv  # Python 3.12を指定する場合
+```
+
+```bash
+# 仮想環境の有効化
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Windows (コマンドプロンプト)
+.venv\Scripts\activate.bat
+
+# macOS / Linux
+source .venv/bin/activate
+```
+
+```bash
+# ライブラリのインストール
+python -m pip install -r requirements.txt
+
+# アプリケーションの起動
 python main.py
 ```
 
